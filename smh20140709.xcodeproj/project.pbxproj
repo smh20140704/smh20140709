@@ -22,6 +22,9 @@
 		A430B0CB196D35AD009E36F1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A430B0AF196D35AD009E36F1 /* CoreData.framework */; };
 		A430B0D3196D35AD009E36F1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A430B0D1196D35AD009E36F1 /* InfoPlist.strings */; };
 		A430B0D5196D35AD009E36F1 /* smh20140709Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A430B0D4196D35AD009E36F1 /* smh20140709Tests.m */; };
+		A430B156196D7652009E36F1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A430B155196D7652009E36F1 /* README.md */; };
+		A430B15B196D76C3009E36F1 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A430B15A196D76C3009E36F1 /* Storyboard.storyboard */; };
+		A430B161196D852C009E36F1 /* SMHStopwatchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A430B160196D852C009E36F1 /* SMHStopwatchVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,10 @@
 		A430B0D0196D35AD009E36F1 /* smh20140709Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "smh20140709Tests-Info.plist"; sourceTree = "<group>"; };
 		A430B0D2196D35AD009E36F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A430B0D4196D35AD009E36F1 /* smh20140709Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = smh20140709Tests.m; sourceTree = "<group>"; };
+		A430B155196D7652009E36F1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		A430B15A196D76C3009E36F1 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		A430B15F196D852C009E36F1 /* SMHStopwatchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMHStopwatchVC.h; sourceTree = "<group>"; };
+		A430B160196D852C009E36F1 /* SMHStopwatchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMHStopwatchVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +91,7 @@
 		A430B09D196D35AD009E36F1 = {
 			isa = PBXGroup;
 			children = (
+				A430B155196D7652009E36F1 /* README.md */,
 				A430B0B1196D35AD009E36F1 /* smh20140709 */,
 				A430B0CE196D35AD009E36F1 /* smh20140709Tests */,
 				A430B0A8196D35AD009E36F1 /* Frameworks */,
@@ -115,10 +123,9 @@
 		A430B0B1196D35AD009E36F1 /* smh20140709 */ = {
 			isa = PBXGroup;
 			children = (
-				A430B0BA196D35AD009E36F1 /* SMHAppDelegate.h */,
-				A430B0BB196D35AD009E36F1 /* SMHAppDelegate.m */,
-				A430B0C0196D35AD009E36F1 /* Images.xcassets */,
-				A430B0BD196D35AD009E36F1 /* smh20140709.xcdatamodeld */,
+				A430B159196D768A009E36F1 /* Model */,
+				A430B158196D7681009E36F1 /* View */,
+				A430B157196D766F009E36F1 /* Controller */,
 				A430B0B2196D35AD009E36F1 /* Supporting Files */,
 			);
 			path = smh20140709;
@@ -151,6 +158,34 @@
 				A430B0D1196D35AD009E36F1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A430B157196D766F009E36F1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A430B0BA196D35AD009E36F1 /* SMHAppDelegate.h */,
+				A430B0BB196D35AD009E36F1 /* SMHAppDelegate.m */,
+				A430B15F196D852C009E36F1 /* SMHStopwatchVC.h */,
+				A430B160196D852C009E36F1 /* SMHStopwatchVC.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A430B158196D7681009E36F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A430B0C0196D35AD009E36F1 /* Images.xcassets */,
+				A430B15A196D76C3009E36F1 /* Storyboard.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A430B159196D768A009E36F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A430B0BD196D35AD009E36F1 /* smh20140709.xcdatamodeld */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +264,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A430B156196D7652009E36F1 /* README.md in Resources */,
+				A430B15B196D76C3009E36F1 /* Storyboard.storyboard in Resources */,
 				A430B0B6196D35AD009E36F1 /* InfoPlist.strings in Resources */,
 				A430B0C1196D35AD009E36F1 /* Images.xcassets in Resources */,
 			);
@@ -250,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A430B0BF196D35AD009E36F1 /* smh20140709.xcdatamodeld in Sources */,
+				A430B161196D852C009E36F1 /* SMHStopwatchVC.m in Sources */,
 				A430B0B8196D35AD009E36F1 /* main.m in Sources */,
 				A430B0BC196D35AD009E36F1 /* SMHAppDelegate.m in Sources */,
 			);
@@ -450,6 +488,7 @@
 				A430B0DA196D35AD009E36F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A430B0DB196D35AD009E36F1 /* Build configuration list for PBXNativeTarget "smh20140709Tests" */ = {
 			isa = XCConfigurationList;
@@ -458,6 +497,7 @@
 				A430B0DD196D35AD009E36F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
